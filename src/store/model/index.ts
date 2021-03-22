@@ -145,6 +145,11 @@ import {Wipoid} from './wipoid';
 import {Xbox} from './xbox';
 import {Zotac} from './zotac';
 import {logger} from '../../logger';
+import {Xkom} from './xkom';
+import {MediExpert} from './mediaexpert';
+import {MediaMarktPL} from './mediamarkt-pl';
+import {OleOle} from './oleole';
+import {RtvEuroAgd} from './rtvagd';
 
 export const storeList = new Map([
   [AComPC.name, AComPC],
@@ -290,7 +295,12 @@ export const storeList = new Map([
   [WellsTechnology.name, WellsTechnology],
   [Wipoid.name, Wipoid],
   [Xbox.name, Xbox],
+  [Xkom.name, Xkom],
   [Zotac.name, Zotac],
+  [MediExpert.name, MediExpert],
+  [MediaMarktPL.name, MediaMarktPL],
+  [OleOle.name, OleOle],
+  [RtvEuroAgd.name, RtvEuroAgd],
 ]);
 
 const brands = new Set();

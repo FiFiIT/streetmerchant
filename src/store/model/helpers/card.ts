@@ -11,6 +11,7 @@ interface LinksBuilderOptions {
   sitePrefix: string;
   titleAttribute?: string;
   titleSelector: string;
+  urlElement?: string;
   urlSelector?: string;
 }
 
@@ -33,6 +34,9 @@ export function getProductLinksBuilder(options: LinksBuilderOptions) {
       }
 
       let urlElement = titleElement;
+      if (options.urlElement) {
+        urlElement = productElement.find(options.urlElement).first();
+      }
 
       if (options.urlSelector) {
         urlElement = urlElement.find(options.urlSelector).first();
