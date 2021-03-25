@@ -11,6 +11,7 @@ export const MediExpert: Store = {
         text: ['DO KOSZYKA'],
       },
     ],
+    type: 'outerHTML',
     maxPrice: {
       container: '.a-price_price',
       euroFormat: true,

@@ -442,7 +442,7 @@ async function lookupCardInStock(store: Store, page: Page, link: Link) {
     const maxPrice = config.store.maxPrice.series[link.series];
 
     link.price = await getPrice(page, store.labels.maxPrice, baseOptions);
-    logger.info(link.price);
+
     if (link.price && link.price > maxPrice && maxPrice > 0) {
       logger.info(Print.maxPrice(link, store, maxPrice, true));
       return false;
@@ -453,7 +453,7 @@ async function lookupCardInStock(store: Store, page: Page, link: Link) {
     const options = {
       ...baseOptions,
       requireVisible: true,
-      type: 'outerHTML' as const,
+      // type: 'outerHTML' as const,
     };
 
     if (!(await pageIncludesLabels(page, link.labels.inStock, options))) {
@@ -466,7 +466,7 @@ async function lookupCardInStock(store: Store, page: Page, link: Link) {
     const options = {
       ...baseOptions,
       requireVisible: true,
-      type: 'outerHTML' as const,
+      // type: 'outerHTML' as const,
     };
 
     if (!(await pageIncludesLabels(page, store.labels.inStock, options))) {
