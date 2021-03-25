@@ -411,7 +411,7 @@ async function lookupCardInStock(store: Store, page: Page, link: Link) {
   const baseOptions: Selector = {
     requireVisible: false,
     selector: store.labels.container ?? 'body',
-    type: 'textContent',
+    type: store.labels.type ?? 'textContent',
   };
 
   if (store.labels.captcha) {
@@ -442,7 +442,7 @@ async function lookupCardInStock(store: Store, page: Page, link: Link) {
     const maxPrice = config.store.maxPrice.series[link.series];
 
     link.price = await getPrice(page, store.labels.maxPrice, baseOptions);
-
+    logger.info(link.price);
     if (link.price && link.price > maxPrice && maxPrice > 0) {
       logger.info(Print.maxPrice(link, store, maxPrice, true));
       return false;

@@ -193,6 +193,7 @@ export type Labels = {
   bannedSeller?: LabelQuery;
   captcha?: LabelQuery;
   container?: string;
+  type?: 'innerHTML' | 'outerHTML' | 'textContent';
   inStock?: LabelQuery;
   outOfStock?: LabelQuery;
   maxPrice?: Pricing;
