@@ -33,17 +33,13 @@ export const Newegg: Store = {
         container: '.ss2',
         text: ['1'],
       },
+    ],
+    outOfStock: [
       {
         container: '.bg-wide-flag',
         text: ['NEXT SHUFFLE: TBD'],
       },
     ],
-    // outOfStock: [
-    //   {
-    //     container: '.bg-wide-flag',
-    //     text: ['NEXT SHUFFLE: TBD'],
-    //   },
-    // ],
   },
   links: [
     {
