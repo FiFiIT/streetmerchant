@@ -24,6 +24,7 @@ import open from 'open';
 import {processBackoffDelay} from './model/helpers/backoff';
 import {sendNotification} from '../notification';
 import useProxy from '@doridian/puppeteer-page-proxy';
+import {XR} from './model/helpers/exchangeRates';
 
 const inStock: Record<string, boolean> = {};
 
@@ -443,7 +444,12 @@ async function lookupCardInStock(store: Store, page: Page, link: Link) {
 
     link.price = await getPrice(page, store.labels.maxPrice, baseOptions);
 
-    if (link.price && link.price > maxPrice && maxPrice > 0) {
+    if (
+      link.price &&
+      link.price * XR[store.currency] > maxPrice &&
+      maxPrice > 0
+    ) {
+      link.price *= XR[store.currency];
       logger.info(Print.maxPrice(link, store, maxPrice, true));
       return false;
     }

@@ -1,3 +1,4 @@
+import {captureRejectionSymbol} from 'node:events';
 import {Browser, PuppeteerLifeCycleEvent} from 'puppeteer';
 
 export type Element = {
@@ -207,6 +208,8 @@ export type CaptchaDeterrent = {
 
 export type StatusCodeRangeArray = Array<number | [number, number]>;
 
+export type Currency = '£' | '$' | '€' | 'R$' | 'kr.' | 'zł' | '';
+
 export type Store = {
   realTimeInventoryLookup?: (itemNumber: string) => Promise<boolean>;
   /**
@@ -224,7 +227,7 @@ export type Store = {
   };
   labels: Labels;
   name: string;
-  currency: '£' | '$' | '€' | 'R$' | 'kr.' | 'zł' | '';
+  currency: Currency;
   setupAction?: (browser: Browser) => void;
   /**
    * The range of status codes which considered successful, i.e. without error
