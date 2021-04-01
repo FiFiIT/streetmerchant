@@ -24,7 +24,8 @@ export const OleOle: Store = {
       },
       {
         series: '3060ti',
-        url: 'https://www.oleole.pl/karty-graficzne,od3300do4100.bhtml',
+        url:
+          'https://www.oleole.pl/karty-graficzne,typ-chipsetu!nvidia-geforce,od4000do6000.bhtml',
       },
       {
         series: '3080',

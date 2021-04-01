@@ -26,7 +26,7 @@ export const MediaMarktPL: Store = {
       {
         series: '3060ti',
         url:
-          'https://mediamarkt.pl/komputery-i-tablety/czesci-komputerowe/karty-graficzne?querystring=karty+graficzne&priceFilter%5Bmin%5D=3300&priceFilter%5Bmax%5D=4100',
+          'https://mediamarkt.pl/komputery-i-tablety/czesci-komputerowe/karty-graficzne?querystring=karty+graficzne&priceFilter%5Bmin%5D=3300&priceFilter%5Bmax%5D=6000',
       },
       {
         series: '3080',
@@ -36,7 +36,7 @@ export const MediaMarktPL: Store = {
       {
         series: '3090',
         url:
-          'https://mediamarkt.pl/komputery-i-tablety/czesci-komputerowe/karty-graficzne?querystring=karty+graficzne&priceFilter%5Bmin%5D=8401&priceFilter%5Bmax%5D=1000',
+          'https://mediamarkt.pl/komputery-i-tablety/czesci-komputerowe/karty-graficzne?querystring=karty+graficzne&priceFilter%5Bmin%5D=8401&priceFilter%5Bmax%5D=10000',
       },
     ],
     ttl: 5 * 60 * 1000,

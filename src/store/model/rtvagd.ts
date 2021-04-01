@@ -24,7 +24,8 @@ export const RtvEuroAgd: Store = {
       },
       {
         series: '3060ti',
-        url: 'https://www.euro.com.pl/karty-graficzne,od3300do4100.bhtml',
+        url:
+          'https://www.euro.com.pl/karty-graficzne,typ-chipsetu!geforce-rtx-3060-ti.bhtml',
       },
       {
         series: '3080',

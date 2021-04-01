@@ -160,7 +160,12 @@ async function lookup(browser: Browser, store: Store) {
   if (store.linksBuilder) {
     const lastRunTime = linkBuilderLastRunTimes[store.name] ?? -1;
     const ttl = store.linksBuilder.ttl ?? Number.MAX_SAFE_INTEGER;
-    if (lastRunTime === -1 || Date.now() - lastRunTime > ttl) {
+    if (
+      lastRunTime === -1 ||
+      Date.now() - lastRunTime > ttl ||
+      store.links == undefined ||
+      store.links.length == 0
+    ) {
       logger.info(`[${store.name}] Running linksBuilder...`);
       try {
         await fetchLinks(store, browser);

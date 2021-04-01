@@ -54,6 +54,7 @@ export const AmazonPL: Store = {
           'https://www.amazon.pl/s?k=3090&i=electronics&rh=n%3A20788599031%2Cp_6%3AA2R2221NX79QZP%2Cp_36%3A800000-900000&dc&__mk_pl_PL=%C3%85M%C3%85%C5%BD%C3%95%C3%91&qid=1616664158&rnid=20900476031&ref=sr_nr_p_36_1',
       },
     ],
+    ttl: 5 * 60 * 1000,
   },
   name: 'amazon-pl',
   waitUntil: 'domcontentloaded',

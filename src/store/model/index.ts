@@ -150,6 +150,7 @@ import {MediExpert} from './mediaexpert';
 import {MediaMarktPL} from './mediamarkt-pl';
 import {OleOle} from './oleole';
 import {RtvEuroAgd} from './rtvagd';
+import {Allegro} from './allegro';
 
 export const storeList = new Map([
   [AComPC.name, AComPC],
@@ -301,6 +302,7 @@ export const storeList = new Map([
   [MediaMarktPL.name, MediaMarktPL],
   [OleOle.name, OleOle],
   [RtvEuroAgd.name, RtvEuroAgd],
+  [Allegro.name, Allegro],
 ]);
 
 const brands = new Set();
