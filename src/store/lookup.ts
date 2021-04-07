@@ -338,7 +338,7 @@ async function lookupCard(
     if (config.page.screenshot) {
       logger.debug('ℹ saving screenshot');
 
-      link.screenshot = `success-${Date.now()}.png`;
+      link.screenshot = `./screenshots/${link.model}/${link.series}-${Date.now()}.png`;
       await page.screenshot({path: link.screenshot});
     }
   }
