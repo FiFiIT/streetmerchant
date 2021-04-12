@@ -56,6 +56,11 @@ export const Xkom: Store = {
         url:
           'https://www.x-kom.pl/g-5/c/346-karty-graficzne-nvidia.html?per_page=90&f[1702][186579]=1',
       },
+      {
+        series: 'sonyps5c',
+        url:
+          'https://www.x-kom.pl/g-7/c/2384-konsole.html?f[price][from]=2300&f[price][to]=2900',
+      },
     ],
     ttl: 5 * 60 * 1000,
   },

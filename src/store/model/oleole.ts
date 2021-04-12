@@ -37,6 +37,10 @@ export const OleOle: Store = {
         url:
           'https://www.oleole.pl/karty-graficzne,typ-chipsetu!nvidia-geforce,od8000do10000.bhtml',
       },
+      {
+        series: 'sonyps5c',
+        url: 'https://www.oleole.pl/konsole-playstation-5.bhtml',
+      },
     ],
     ttl: 5 * 60 * 1000,
   },

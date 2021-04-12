@@ -52,6 +52,11 @@ export const MediExpert: Store = {
         url:
           'https://www.mediaexpert.pl/komputery-i-tablety/podzespoly-komputerowe/karty-graficzne/producent-chipsetu_nvidia/model_geforce-rtx-3090',
       },
+      {
+        series: 'sonyps5c',
+        url:
+          'https://www.mediaexpert.pl/gaming/playstation-5/konsole-ps5/typ-konsoli_playstation-5',
+      },
     ],
     ttl: 5 * 60 * 1000,
   },

@@ -35,6 +35,11 @@ export const RtvEuroAgd: Store = {
         series: '3090',
         url: 'https://www.euro.com.pl/karty-graficzne,od8401do10000.bhtml',
       },
+      {
+        series: 'sonyps5c',
+        url:
+          'https://www.euro.com.pl/search/playstation-5,od2300.bhtml?keyword=konsola%20sony%20playstation%205',
+      },
     ],
     ttl: 5 * 60 * 1000,
   },

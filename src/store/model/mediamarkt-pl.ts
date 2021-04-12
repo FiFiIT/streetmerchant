@@ -38,6 +38,11 @@ export const MediaMarktPL: Store = {
         url:
           'https://mediamarkt.pl/komputery-i-tablety/czesci-komputerowe/karty-graficzne?querystring=karty+graficzne&priceFilter%5Bmin%5D=8401&priceFilter%5Bmax%5D=10000',
       },
+      {
+        series: 'sonyps5c',
+        url:
+          'https://mediamarkt.pl/konsole-i-gry/playstation-5/konsole-ps5?priceFilter%5Bmin%5D=2200&priceFilter%5Bmax%5D=2900',
+      },
     ],
     ttl: 5 * 60 * 1000,
   },
